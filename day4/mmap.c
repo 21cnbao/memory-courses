@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 
 	int fd = open("./hello.py", O_RDONLY, S_IRUSR);
 	if (fd == -1) {
-		perror("/dev/sda open() failed, use 'sudo'\n");
+		perror("hello.py failed\n");
 		exit(-1);
 	};
 
@@ -26,4 +26,5 @@ int main(int argc, char **argv)
 	printf("%s\n", m);
 
 	munmap(m, MAP_SIZE);
+	close(fd);
 }
