@@ -1,1 +1,12 @@
+# 1. getdelay+swap
+### 本实验要保证swap不关闭，如已经关闭，运行sudo swapon -a
+### 按照视频提示，用getdelays监控swap.c
+
+# 2. cgroup/memory
+### 本实验要关闭swap, 运行swapoff -a
+### 按照视频提示，把oom.c用cgexec放到新的group执行
+
+# 3. vmstat
+### 本实验要保证swap不关闭，如已经关闭，运行sudo swapon -a
+### 按照视频提示，运行vmstat，修改swap.c，加大磁盘压力
 
